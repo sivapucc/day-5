@@ -14,7 +14,7 @@
 (function(arr){
     var arr1=[];
     for(var i=0;i<arr.length;i++){
-        a=arr[i];
+        var a=arr[i];
         var b=a[0].toUpperCase()+a.slice(1);
         arr1.push(b);
     }
