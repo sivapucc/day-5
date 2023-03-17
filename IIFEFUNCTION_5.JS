@@ -1,5 +1,5 @@
 //a) Print Odd numbers in an array
-var odd = (function(arr){
+(function(arr){
     var arr1=[];
     for(var i=0;i<arr.length;i++){
         if(arr[i]%2!==0){
@@ -11,7 +11,7 @@ var odd = (function(arr){
 
 
 //b) Convert all the Strings to caps in a string array
-var caps = (function(arr){
+(function(arr){
     var arr1=[];
     for(var i=0;i<arr.length;i++){
         a=arr[i];
@@ -23,7 +23,7 @@ var caps = (function(arr){
 
 
 //c) Sum of all numbers in the array
-var sum = (function(arr){
+(function(arr){
     var arr1=0;
     for(var i=0;i<arr.length;i++){
         arr1+=arr[i];
@@ -32,7 +32,7 @@ var sum = (function(arr){
 })([1,5,9,7,45,63,2]);
 
 //d) Return all prime numbers in an array
-var prime = (function(arr){
+(function(arr){
     var arr1=[];
     arr.sort();
     for(var i=0;i<arr.length;i++){
@@ -50,7 +50,7 @@ var prime = (function(arr){
 })([1,5,9,7,45,63,2]);
 
 //e) Return all palindrome in an array
-var palindrome = (function(arr){
+(function(arr){
     var arr1=[];
     for(var i=0;i<arr.length;i++){
         var s=String(arr[i]).split("").map(Number);
@@ -66,7 +66,7 @@ var palindrome = (function(arr){
 })([121,451,858,623,78987]);
 
 //f) Return median of two sorted arrays
-var median =( function(arr1,arr2){
+( function(arr1,arr2){
     var arr3=arr1+arr2;
     var a=arr3.split(",").map(Number);
     a.sort();
@@ -81,7 +81,7 @@ var median =( function(arr1,arr2){
 })([2,1,4,5,6],[5,4,6,7,8]);
 
 //g) Remove dulicates from an array
-var duplicate = (function(arr){
+(function(arr){
     var arr1=[];
     arr.sort();
     for(var i=0;i<arr.length;i++){
@@ -99,7 +99,7 @@ var duplicate = (function(arr){
 })([1,2,2,3,4,5,5,6,8,8,8,9]);
 
 //h) Rotate an array by k times
-var rotate = (function(arr,k){
+(function(arr,k){
     for(var i=0;i<k;i++){
         arr.splice(0,0,arr[arr.length-1]);
         arr.pop();
